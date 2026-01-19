@@ -68,4 +68,14 @@ let countEL = document.getElementById("count-el") //camelCase
         console.log(count)
     }
 
+    function save() {
+        console.log(count)
+    }
+    save()
 
+let username = "wachira"
+let message = "you have three new notifications"
+//console.log(message + ","+ username +"!")
+
+let messageToUser = message + "," + username + "!"
+console.log(messageToUser)
