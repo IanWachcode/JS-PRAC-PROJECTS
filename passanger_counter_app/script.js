@@ -46,36 +46,49 @@
 //console.log(lapsCompleted)
 
 
-//let count = 0
-//function increment() {
-    //console.log("The button was clicked")
-  //  count = count + 1
-   // console.log(count)
-//}
- let countEl = document.getElementById("count-el") //camelCase
- console.log(countEl)
-
-    let count = 0
-    function increment() {
-        count = count + 1
-        countEl.innerText = count
+let count = 0
+function increment() {
+       count += 1
+    countEl.innerText = count
         console.log(count)
-    }
-let countEL = document.getElementById("count-el") //camelCase
-    function decrement() {
-        count = count - 1
-        countEl.innerText = count
+}
+    let countEl = document.getElementById("count-el") //camelCase
+    console.log(countEl)
+    let countEL = document.getElementById("count-el") //camelCase
+function decrement() {
+        count -= 1
+    countEl.innerText = count
         console.log(count)
+    }   count
+function save() {
+        let saveEl = document.getElementById("save-el")
+        let countStr = count + " - "
+        saveEl.innerText += countStr
+      console.log(count)
     }
+save()
 
-    function save() {
-        console.log(count)
-    }
-    save()
-
-let username = "wachira"
-let message = "you have three new notifications"
+//let username = "wachira"
+//let message = "you have three new notifications"
 //console.log(message + ","+ username +"!")
 
-let messageToUser = message + "," + username + "!"
-console.log(messageToUser)
+//let messageToUser = message + "," + username + "!"
+//console.log(messageToUser)
+
+//let name = "Wachira";
+//let greeting = "Hi, my name is ";
+
+//let myGreeting = greeting + name;
+//console.log(myGreeting);
+
+
+//let WelcomeEL = document.getElementById("welcome-el")
+//let name = "Wachira";
+//let greeting = "Welcome back";
+//WelcomeEL.innerText = greeting + ", " + name;
+
+//WelcomeEL.innerText = WelcomeEL.innerText + " 👋" //added emoji
+
+//WelcomeEL.innerText += " 👋" //shorthand way to add emoji
+
+
