@@ -19,7 +19,8 @@ function save() {
         let saveEl = document.getElementById("save-el")
         let countStr = count + " - "
         saveEl.textContent += countStr
-        console.log(count)
+        countEL.textContent = 0
+        count = 0
 }
 save()
 
@@ -32,3 +33,5 @@ WelcomeEL.innerText = greeting + ", " + name;
 WelcomeEL.innerText = WelcomeEL.innerText + " 👋" //added emoji
 
 WelcomeEL.innerText += " 👋" //shorthand way to add emoji
+
+
